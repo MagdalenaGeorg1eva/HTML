@@ -1,0 +1,117 @@
+<html>
+<head>
+<title> Моята регистрационна форма </title>
+<style>
+body{
+ background-image: url("marbleTexture.jpg");
+ margin: 0 auto;
+}
+h1{
+ text-align:center;
+}
+table{
+ border: 20px solid rgb(60, 60, 60);
+ background-color: rgb(60, 60, 60);
+ border-collapse: collapse;
+ margin: 0 auto;
+}
+td{
+ border: 20px solid rgb(60, 60, 60);
+ border-collapse: collapse;
+}
+.td1{
+ background-color:white;
+ vertical-align:middle;
+}
+.td2{
+ background-color:white;
+ text-align:center;
+ vertical-align:middle;
+}
+.subtitle{
+ font-size:25px;
+ color:white;
+ font-style:italic;
+ text-align:center;
+}
+.vits{
+ background-color:white;
+ padding:10px;
+ text-align:center;
+}
+.reset{
+ text-align:right;
+ padding:15px;
+ vertical-align:bottom;
+}
+.mailto{
+ text-align:left;
+ padding:15px;
+ vertical-align:bottom;
+}
+</style>
+</head>
+<body>
+<h1> Моята регистрационна форма </h1>
+<table>
+<tr>
+<td class="td1"> 
+<form> Име: <input type="text" name="ime" size="30" maxlength="25" value=""> </form>  
+<form> Фамилия: <input type="text" name="ime" size="30" maxlength="25" value=""> </form>  
+</td>
+<td class="td1"> 
+<form> Парола: <input type="password" name="pwd"> </form>  
+<form> Повтори парола: <input type="password" name="pwd"> </form>   
+</td>
+</tr>
+
+<tr class="subtitle">
+<td colspan="2"> Допълнителна информация </td>
+</tr>
+
+<tr>
+<td class="td2"> 
+<form> Пол: 
+<select name="">
+<option value="жена"> Жена </option>
+<option value="мъж"> Мъж </option>
+</select>
+</form>  
+<form> Възраст: <input type="text" name="vuzrast" size="4" maxlength="5" value="години"> </form>  
+</td>
+<td class="td2"> 
+<form> Какви вицове обичаш: <br>
+<select name=" ">
+<option value=" "> Не обичам вицове </option>
+<option value=" "> Вицове с черен хумор </option>
+<option value=" "> Вицове за актьори </option>
+<option value=" "> Вицове за богаташи </option>
+</select>
+</form>
+</td>
+</tr>
+
+<tr class=vits>
+<td colspan="2">
+<form> 
+Искате ли да получавате повече информация за новите вицове? <input type="checkbox" name="Choice"> 
+</form>  
+<br>
+<form> 
+Напишете любимия си виц: <input type="text" name="vits" size="50" maxlength="60" value="Любим виц">
+</form>  
+</td>
+</tr>
+
+<tr>
+<td class="reset"> 
+<form action="reset">  <input type="reset" value="Изчисти"> </form>  
+</td>
+<td class="mailto">
+<form action="mailto:d.savova@51school.bg" method="get"> <input type="submit" value="Изпрати"> </form>  
+</td>
+</tr>
+
+</table>
+</body>
+</html>

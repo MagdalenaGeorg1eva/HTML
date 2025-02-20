@@ -1,0 +1,131 @@
+<html lang="bg">
+<head>
+    <title> Анкета </title>
+	<link rel="stylesheet" type="text/css" href="questions.css">
+</head>
+<body>
+    <h1> Анкета </h1>
+	<form class="data">
+	    Прикачете файл: <br>
+	    <input type="file" name="file"> <br><br>
+		
+		Въведете трите си имена: <br>
+		<input type="text" name="name"> <br><br>
+		
+		Пол: <br>
+		<input type="radio" name="gender" value="male">
+        Мъж <br>
+		<input type="radio" name="gender" value="female"> 
+        Жена <br><br>
+		
+		Населено място: <br>
+		<select name="location">
+            <option value="town">Град</option>
+            <option value="village">Село</option>
+        </select> <br><br>
+		
+		Въведете вашия адрес: <br>
+		<input type="text" name="adress"> <br><br>
+		
+		Училище: <br>
+		<input type="text" name="school"> <br><br>
+		
+		Клас: <br>
+		<select name="grade">
+            <option value="8">8</option>
+            <option value="9">9</option>
+			<option value="10">10</option>
+            <option value="11">11</option>
+			<option value="12">12</option>
+        </select> <br><br>
+	</form>
+		
+		<h1> Въпроси </h1>
+		<form class="question">
+		    Какви профилиращи предмети изучавате в училище? <br>
+			<input type ="checkbox" name="major" value="IT">
+            Информационни технологии <br>
+			<input type ="checkbox" name="major" value="IT">
+            Информатика <br>
+			<input type ="checkbox" name="major" value="English">
+            Английски език <br>
+			<input type ="checkbox" name="major" value="Art">
+            Изобразително изкуство <br>
+			<input type ="checkbox" name="major" value="History">
+            История <br>
+			<input type ="checkbox" name="major" value="Biology">
+            Биология <br>
+			<input type ="checkbox" name="major" value="Chemistry">
+            Химия <br>
+			<input type ="checkbox" name="major" value="other">
+            Друго <br>
+			Ако сте отговорили с друго, моля въведете профилиращ предмет:
+			<input type="text" name="other"><br><br>
+			
+			Кой ви е любимият предмет в училище? <br>
+			<input type ="checkbox" name="class" value="IT">
+            Информационни технологии <br>
+			<input type ="checkbox" name="class" value="Math">
+            Математика <br>
+			<input type ="checkbox" name="class" value="English">
+            Английски език <br>
+			<input type ="checkbox" name="class" value="Art">
+            Изобразително изкуство <br>
+			<input type ="checkbox" name="class" value="History">
+            История <br>
+			<input type ="checkbox" name="class" value="Biology">
+            Биология <br>
+			<input type ="checkbox" name="class" value="Chemistry">
+            Химия <br>
+			<input type ="checkbox" name="class" value="Bulgarian">
+            Български език <br>
+			<input type ="checkbox" name="class" value="other">
+            Друго <br>
+			Ако сте отговорили с друго, моля въведете любим предмет:
+			<input type="text" name="other"><br><br>
+			
+			С какво бихте искали да се занимавате в бъдеще? <br>
+			<input type="text" name="profession"> <br><br>
+			
+			Обучението помага ли ви да се развивате в посоката, в която искате? <br>
+			<input type="radio" name="education" value="yes">
+            Да<br>
+		    <input type="radio" name="education" value="no">
+            Не<br><br>
+			
+			Какво би направило обучението по-ефективно според вас? <br>
+			<input type="text" name="education"> <br><br>
+			
+			Какво ви мотивира в училище? <br>
+			<input type="text" name="motivation"> <br><br>
+			
+			Какви методи на преподаване харесвате? <br>
+			<input type ="checkbox" name="teaching" value="method">
+            Диктуване на план <br>
+			<input type ="checkbox" name="teaching" value="method">
+            Воденето на дискусия <br>
+			<input type ="checkbox" name="teachingr" value="method">
+            Работа в екип <br>
+			<input type ="checkbox" name="teaching" value="method">
+            Самостоятелна работа <br>
+			<input type ="checkbox" name="teaching" value="method">
+            Игрови дейности, свързани с материала <br><br>
+			
+			Какво най-много обичате в училище? <br>
+			<input type="text" name="school"> <br><br>
+			
+			Какво бихте променили в училище?<br>
+			<input type="text" name="school"> <br><br>
+			
+			Смятате ли, че учителите ви обогатяват със знания? <br>
+			<input type="radio" name="education" value="yes">
+            Да<br>
+		    <input type="radio" name="education" value="no">
+            Не<br>
+			Ако сте отговорили с не, моля напишете защо:
+			<input type="text" name="no"><br><br>
+			<button type="submit">Изпрати</button>
+	    </form>
+</body>			
+</html>	
+			
