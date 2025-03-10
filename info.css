@@ -1,0 +1,28 @@
+.info{
+ background-color:#DAF9A6;
+ width:800px;
+ margin:auto;
+ margin-top:-41px;
+}
+.title{
+ color:#88A652;
+ text-align:center;
+ font-size:25px; 
+}
+.blue{
+ margin-left:20px;
+ margin-right:20px;
+ margin-top:-20px;
+ font-size:20px;
+ color: #2B51AA;
+ font-style:bold;
+}
+.black{
+ margin-top:-20px;
+ margin-left:20px;
+ margin-right:20px;
+ font-size:20px;
+ color: black;
+ font-style:bold;
+ margin-top:-20px;
+}

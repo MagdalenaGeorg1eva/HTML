@@ -1,0 +1,16 @@
+body{
+ margin: 100px 350px;
+ background-color: #97FFFF;
+}
+
+.data{
+ font-family: Monospace;
+ font-size: 15pt;
+ font-weight: bold;
+ text-align: center;
+}
+.question{
+ font-family: Myriad Pro;
+ font-size: 17pt;
+ text-align: left;
+}
