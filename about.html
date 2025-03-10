@@ -17,16 +17,261 @@
 </span>
 <a href="contact.html"> Контакт </a>
 </nav>
-<div class="mainContent">
+<!-- <div class="mainContent">
 <div class="image">
 <img src="Snimka.jpg" width="400px">
-</div>
+</div> -->
+<video width="320" height="240" controls>
+  <source src="videoplayback.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+<div class="main-container"> </div>
+<style>
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  vertical-align: middle;
+}
+.main-container {
+  display: flex;
+  align-items: flex-start;
+  padding: 60x;
+}
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+  width: 40%; 
+  float: left;
+  flex: 1;
+  margin-right: 20px;
+}
+.text {
+  width: 100%;
+  margin-top: 20px;
+}
+video {
+  flex: 1;
+  max-width: 320px; 
+  position: ;
+}
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+</style>
+<body>
+<div class="container">
+  <div class="mySlides">
+    <div class="numbertext">1 / 3</div>
+    <img src="Snimka.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">2 / 3</div>
+    <img src="moqsnimka1.JPG" style="width:100%">
+  </div>
+  <div class="mySlides">
+    <div class="numbertext">3 / 3</div>
+    <img src="moqsnimka2.JPG" style="width:100%">
+  </div>    
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+
+  <!-- <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="Snimka.jpg" style="width:50%" onclick="currentSlide(1)" >
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="moqsnimka1.JPG" style="width:50%" onclick="currentSlide(2)" >
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="moqsnimka2.JPG" style="width:50%" onclick="currentSlide(3)" >
+    </div>
+  </div>
+</div> -->
+
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("demo");
+  let captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
 <div class="text">
 <h1> Магдалена Георгиева </h1>
 <p> Аз съм студентка в ТУ- София, специалност КСИ.<br> Завършила съм 51СУ "Елисавета Багряна" със Софтуерни и хардуерни науки. <br>
 Взимала съм участие в множество училищни, международни и регионални състезания и конкурси.<br>
 В това портфолио ще видите част от моите проекти.</p>
-<button> <a href="myProject.html"> Проекти и задачи </a> </button>
+<style>
+.content {
+  width: 55%; /* Ширина на текста */
+  margin-left: 5%; /* Разстояние между слайдшоуто и текста */
+  float: left;
+}
+.button {
+  border-radius: 4px;
+  background-color: #FFFFCC;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px auto;
+  display: block;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+footer {
+  clear: both;
+  text-align: center;
+  padding: 20px;
+  background-color: #f1f1f1;
+  margin-top: 20px;
+}
+
+footer img {
+  margin: 0 10px;
+  vertical-align: middle;
+}
+
+</style>
+</head>
+<body>
+<button class="button"> <a href="myProject.html"> <span>Проекти и задачи </a> </span></button>
 </div>
 </div>
 <footer> 
